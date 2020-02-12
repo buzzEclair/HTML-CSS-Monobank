@@ -2,59 +2,276 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>FastShell by @_Karamii</title>
+    <title>Monobank</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <script src="https://kit.fontawesome.com/af4ae3121f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link href="assets/css/style.min.css" rel="stylesheet">
 
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
-
-    <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/img/logo.png" alt="Logo">
+    <!-- Header Monobank-->
+    <header>
+      <nav class="mb-df mb-primary">
+        <a class="mb-bold" href="#">
+          <span class="mb-white">monobank</span> 
+          <span class="mb-nav-logo-separator mb-white">|</span>
+          <span class="mb-light">Web</span>
         </a>
-      </div>
-      <nav class="nav" role="navigation">
-        <ul>
-          <li>
-            <a href="/"></a>
-          </li>
-        </ul>
+        <div class="mb-nav-currency mb-df mb-uppercase mb-open-sans-600">
+          <p>usd <span class="mb-nav-currency-amount">27,23</span> <i class="fas fa-chevron-down mb-red"></i></p>
+          <p class="mb-nav-currency-separator">/</p>
+          <p>eur <span class="mb-nav-currency-amount">32,60</span> <i class="fas fa-chevron-up mb-green"></i></p>
+          <p class="mb-nav-currency-separator">/</p>
+          <p>btc <span class="mb-nav-currency-amount">250 648</span> <i class="fas fa-chevron-up mb-green"></i></p>
+        </div>
+        <div class="mb-nav-option mb-df">
+          <a href="#" class="mb-uppercase mb-secondary mb-open-sans-400 mb-white" >money transfer</a>
+          <a href="#" class="mb-uppercase mb-secondary mb-open-sans-400 mb-white" >charge phone</a>
+          <a href="#" class="mb-uppercase mb-secondary mb-open-sans-400 mb-white" >replenish card</a>
+        </div>
+        <div class="mb-nav-avatar mb-df ">
+          <p class="mb-nav-avatar-p">Hello, Nick ! </p>
+          <img class="mb-nav-avatar-img" src="assets/img/__temps/avatar.jpg" alt="profile img">
+        </div>
       </nav>
     </header>
 
-    <main class="main" role="main">
+    <!-- Aside + Main Flex-->
+    <div class="mb-df">
+      <!-- Aside Monobank-->
+      <aside class="mb-secondary">
+        <div class="mb-df mb-fd-c mb-aside">
+          <a href ="#" class="mb-df mb-fd-c mb-ai-c mb-jc-c mb-aside-active">
+            <i class="fas fa-piggy-bank"></i>
+            <p href="#">Dashboard</p>
+          </a>
+          <a href ="#" class="mb-df mb-fd-c mb-ai-c mb-jc-c">
+            <i class="fas fa-money-check-alt"></i>
+            <p href="#">Cards</p>
+          </a>
+          <a href ="#" class="mb-df mb-fd-c mb-ai-c mb-jc-c" >
+            <i class="fas fa-exchange-alt"></i>
+            <p href="#">Transfer / Deposit</p>
+          </a>
+          <a href ="#" class="mb-df mb-fd-c mb-ai-c mb-jc-c">
+            <i class="fas fa-cogs"></i>
+            <p href="#">Settings</p>
+          </a>
+        </div>
+      </aside>
+      <!-- Main Monobank-->
+      <main>
+        <!-- Main Monobank - Section Cards -->
+        <section class="mb-df mb-section-cards mb-ai-c">
+          <div class="mb-card mb-df mb-fd-c mb-jc-sa">
+            <!-- Main Monobank - Section Cards - Amount / Update -->
+            <div class="mb-df mb-ai-c">
+              <p class="mb-card-amount mb-white">1 200</p>
+              <p class="mb-card-currency mb-uppercase mb-white">eur</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Card Number -->
+            <div class="mb-df mb-jc-sb mb-open-sans-300">
+              <p class="mb-card-number">1234</p>
+              <p class="mb-card-number">5678</p>
+              <p class="mb-card-number">9101</p>
+              <p class="mb-card-number">1123</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Date / Brand -->
+            <div class="mb-df mb-jc-sb mb-ai-c">
+              <p class="mb-card-date mb-open-sans-300">07/20</p>
+              <p class="mb-card-brand">                
+                <i class="fab fa-cc-mastercard mb-primary-text"></i>
+              </p>
+            </div>
+          </div>
+          <div class="mb-card mb-df mb-fd-c mb-jc-sa">
+            <!-- Main Monobank - Section Cards - Amount / Update -->
+            <div class="mb-df mb-ai-c">
+              <p class="mb-card-amount mb-white">8 458</p>
+              <p class="mb-card-currency mb-uppercase mb-white">eur</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Card Number -->
+            <div class="mb-df mb-jc-sb mb-open-sans-300">
+              <p class="mb-card-number">1234</p>
+              <p class="mb-card-number">5678</p>
+              <p class="mb-card-number">9101</p>
+              <p class="mb-card-number">1123</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Date / Brand -->
+            <div class="mb-df mb-jc-sb mb-ai-c">
+              <p class="mb-card-date mb-open-sans-300">12/20</p>
+              <p class="mb-card-brand">                
+                <i class="fab fa-cc-visa mb-primary-text"></i>
+              </p>
+            </div>
+          </div>
+          <div class="mb-card mb-df mb-fd-c mb-jc-sa">
+            <!-- Main Monobank - Section Cards - Amount / Update -->
+            <div class="mb-df mb-ai-c">
+              <p class="mb-card-amount mb-white">0</p>
+              <p class="mb-card-currency mb-uppercase mb-white">eur</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Card Number -->
+            <div class="mb-df mb-jc-sb mb-open-sans-300">
 
-    </main>
+            </div>
+            <!-- Main Monobank - Section Cards - Date / Brand -->
+            <div class="mb-df mb-jc-sb mb-ai-c">
+              <p class="mb-card-date mb-open-sans-300">Unlimited</p>
+              <p class="mb-card-brand">                
+                <i class="fab fa-cc-paypal mb-primary-text"></i>
+              </p>
+            </div>
+          </div>
+          <div class="mb-card mb-df mb-fd-c mb-jc-sa">
+            <!-- Main Monobank - Section Cards - Amount / Update -->
+            <div class="mb-df mb-ai-c">
+              <p class="mb-card-amount mb-white">2 200</p>
+              <p class="mb-card-currency mb-uppercase mb-white">dol</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Card Number -->
+            <div class="mb-df mb-jc-sb mb-open-sans-300">
+              <p class="mb-card-number">1234</p>
+              <p class="mb-card-number">5678</p>
+              <p class="mb-card-number">9101</p>
+              <p class="mb-card-number">1123</p>
+            </div>
+            <!-- Main Monobank - Section Cards - Date / Brand -->
+            <div class="mb-df mb-jc-sb mb-ai-c">
+              <p class="mb-card-date mb-open-sans-300">05/20</p>
+              <p class="mb-card-brand">                
+                <i class="fab fa-cc-amex mb-primary-text"></i>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Main Monobank - Section Dashboard Content -->
+        <div class="mb-section-dashboard-content mb-df mb-jc-sa">
+          <!-- Main Monobank - Section Dashboard Content Left -->
+          <div class="mb-section-dashboard-content-left mb-df mb-fd-c">
+            <section class="mb-section-dashboard-item">
+              <div class="mb-section-dashboard-item-header mb-df">
+                <borderColor: , class="mb-open-sans-700 mb-black-text">Balance summary</h2>
+                
+              </div>
+              <canvas id="myChart" width="400" height="200"></canvas>
+              <h2 class="mb-black-text">Account balance: <span>24 500</span></h2>
+            </section>
+          </div>
+          <!-- Main Monobank - Section Dashboard Content Right -->
+          <div class="mb-section-dashboard-content-right mb-df mb-fd-c">
+            <section class="mb-section-dashboard-item">
+              <!-- Main Monobank - Section Dashboard Content Right Header-->
+              <div class="mb-section-dashboard-item-header mb-df mb-jc-sb">
+                <h2 class="mb-open-sans-700 mb-black-text">Transaction history</h2>
+                <div class="mb-df">
+                  <select class="mb-primary-text" >
+                    <option value=""> Any Currency 
+                      <i class="fas fa-chevron-down mb-primary-text"></i>
+                    </option>
+                    <option value="dog">Dol</option>
+                    <option value="cat">Eur</option>
+                    <option value="hamster">Coin</option>
+                  </select>
+                  <select class="mb-primary-text" >
+                    <option value=""> Any Card 
+                      <i class="fas fa-chevron-down mb-primary-text"></i>
+                    </option>
+                    <option value="dog">Amex</option>
+                    <option value="cat">MasterCard</option>
+                    <option value="hamster">Visa</option>
+                  </select>
+                  <select class="mb-primary-text" >
+                    <option value=""> All Categories 
+                      <i class="fas fa-chevron-down mb-primary-text"></i>
+                    </option>
+                    <option value="dog">Amex</option>
+                    <option value="cat">MasterCard</option>
+                    <option value="hamster">Visa</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Main Monobank - Section Dashboard Content Right Day Transactions-->
+              <div class="mb-section-dashboard-item-history mb-df mb-fd-c">
+                <p class="mb-section-dashboard-item-day mb-primary-text mb-open-sans-600">December 31</p>
+                <!-- Main Monobank - Section Dashboard Content Right Day Transactions Line-->
+                <div class="mb-df mb-jc-sb mb-section-dashboard-item-day-transaction">
+                  <div class="mb-df">
+                    <div class="mb-section-dashboard-item-icon mb-section-dashboard-item-icon-food">
+                      <i class="fas fa-hamburger"></i>
+                    </div>
+                    <div class="mb-section-dashboard-item-ref mb-df mb-fd-c">
+                      <p class="mb-black-text mb-open-sans-600">”Food & Drinks” Restaurant </p>
+                      <p class="mb-light mb-section-dashboard-item-ref-card">Cafe and restaurants <span>Card: ** 3478</span> </p>
+                    </div>
+                  </div>
+                  <div class="mb-section-dashboard-item-amount mb-black-text">
+                    - 75.65<span class="mb-uppercase mb-secondary-text mb-secondary-text">eur</span> 
+                  </div>
+                </div>
+                <!-- Main Monobank - Section Dashboard Content Right Day Transactions Line-->
+                <div class="mb-df mb-jc-sb mb-section-dashboard-item-day-transaction">
+                  <div class="mb-df">
+                    <div class="mb-section-dashboard-item-icon mb-section-dashboard-item-icon-grocery">
+                      <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="mb-section-dashboard-item-ref mb-df mb-fd-c">
+                      <p class="mb-black-text mb-open-sans-600">”Walmart” store (Main Str. 13) </p>
+                      <p class="mb-light mb-section-dashboard-item-ref-card">Grocery and Foods <span>Card: ** 3478</span> </p>
+                    </div>
+                  </div>
+                  <div class="mb-section-dashboard-item-amount mb-black-text">
+                    - 50.65<span class="mb-uppercase mb-secondary-text mb-secondary-text">eur</span> 
+                  </div>
+                </div>
+                <!-- Main Monobank - Section Dashboard Content Right Day Transactions Line-->
+                <div class="mb-df mb-jc-sb mb-section-dashboard-item-day-transaction">
+                  <div class="mb-df">
+                    <div class="mb-section-dashboard-item-icon mb-section-dashboard-item-icon-clothes">
+                      <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="mb-section-dashboard-item-ref mb-df mb-fd-c">
+                      <p class="mb-black-text mb-open-sans-600">”Zara Man” store</p>
+                      <p class="mb-light mb-section-dashboard-item-ref-card">Clothes and shoes<span>Card: ** 3478</span> </p>
+                    </div>
+                  </div>
+                  <div class="mb-section-dashboard-item-amount mb-black-text">
+                    - 120.65<span class="mb-uppercase mb-secondary-text mb-secondary-text">eur</span> 
+                  </div>
+                </div>
 
-    <aside class="sidebar" role="complementary">
-
-    </aside>
-
-    <footer class="footer" role="contentinfo">
-
-    </footer>
-
+              </div>
+              <!-- Main Monobank - Section Dashboard Content Right Day Transactions-->
+              <div class="mb-section-dashboard-item-history mb-df mb-fd-c">
+                <p class="mb-section-dashboard-item-day mb-primary-text mb-open-sans-600">December 31</p>
+                <div class="mb-df mb-jc-sb">
+                  <div class="mb-df">
+                    <div class="mb-section-dashboard-item-icon mb-section-dashboard-item-icon-food">
+                      <i class="fas fa-hamburger"></i>
+                    </div>
+                    <div class="mb-section-dashboard-item-ref mb-df mb-fd-c">
+                      <p class="mb-black-text mb-open-sans-600">”Food & Drinks” Restaurant </p>
+                      <p class="mb-light mb-section-dashboard-item-ref-card">Cafe and restaurants <span>Card: ** 3478</span> </p>
+                    </div>
+                  </div>
+                  <div class="mb-section-dashboard-item-amount mb-black-text">
+                    - 75.65<span class="mb-uppercase mb-secondary-text mb-secondary-text">eur</span> 
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
   </body>
 </html>

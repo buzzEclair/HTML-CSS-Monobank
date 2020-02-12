@@ -1,3 +1,37 @@
-.sidebar {
-
+aside {
+  max-width: 200px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  .mb-aside{
+    padding-top: 130px;
+    a{
+      height: 110px;
+      position: relative;
+      // Class Active
+      &.mb-aside-active{
+        background: $primary;
+        &::after{
+          content: '';
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          background: $white;
+          right: -7px;
+          transform: rotate(45deg);
+        }
+        i,p{
+          color: $white;
+        }
+      }
+      i{
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 13px;
+        letter-spacing: 0.7px;
+      }
+    }
+  }
 }

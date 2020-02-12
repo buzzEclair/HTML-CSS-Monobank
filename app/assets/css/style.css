@@ -10,20 +10,103 @@
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  color: #aaaaaa; }
 
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+a {
+  text-decoration: none; }
 
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in; }
+p {
+  padding: 0;
+  margin: 0; }
 
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0; }
+
+.mb-light {
+  font-family: 'nexa-light'; }
+
+.mb-bold {
+  font-family: 'nexa-bold'; }
+
+.mb-open-sans-300 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+.mb-open-sans-400 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+.mb-open-sans-600 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+
+.mb-open-sans-700 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700; }
+
+.mb-df {
+  display: -ms-flexbox;
+  display: flex; }
+
+.mb-fd-c {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.mb-jc-c {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.mb-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.mb-jc-sb {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.mb-ai-c {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.mb-ai-fe {
+  -ms-flex-align: end;
+      align-items: flex-end; }
+
+.mb-uppercase {
+  text-transform: uppercase; }
+
+.mb-primary {
+  background: #2c2c2c; }
+
+.mb-secondary {
+  background: #363636; }
+
+.mb-red {
+  color: #e77173; }
+
+.mb-green {
+  color: #78d46f; }
+
+.mb-white {
+  color: white; }
+
+.mb-primary-text {
+  color: #aaaaaa; }
+
+.mb-secondary-text {
+  color: #919191; }
+
+.mb-black-text {
+  color: #2c2c2c; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -397,20 +480,196 @@ textarea {
   top: 50%;
   left: 50%; }
 
-.nav ul {
-  list-style: none; }
+nav {
+  height: 60px;
+  width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  z-index: 2; }
+  nav .mb-nav-logo-separator {
+    margin-left: 10px;
+    margin-right: 10px; }
+  nav .mb-nav-currency {
+    font-size: 11px; }
+    nav .mb-nav-currency .mb-nav-currency-amount {
+      margin-left: 10px; }
+    nav .mb-nav-currency .mb-nav-currency-separator {
+      margin-left: 40px;
+      margin-right: 40px; }
+    nav .mb-nav-currency i {
+      font-size: 10px;
+      margin-left: 5px; }
+  nav .mb-nav-option a {
+    height: 30px;
+    padding: 0 15px;
+    line-height: 30px;
+    font-size: 11px;
+    display: inline-block;
+    letter-spacing: 1.5px; }
+    nav .mb-nav-option a:first-child {
+      margin-right: 1px;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px; }
+    nav .mb-nav-option a:last-child {
+      margin-left: 1px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px; }
+  nav .mb-nav-avatar {
+    -ms-flex-align: center;
+        align-items: center; }
+    nav .mb-nav-avatar .mb-nav-avatar-p {
+      margin-right: 20px; }
+    nav .mb-nav-avatar .mb-nav-avatar-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+
+aside {
+  max-width: 200px;
+  height: 100vh;
+  width: 100%;
+  position: fixed; }
+  aside .mb-aside {
+    padding-top: 130px; }
+    aside .mb-aside a {
+      height: 110px;
+      position: relative; }
+      aside .mb-aside a.mb-aside-active {
+        background: #2c2c2c; }
+        aside .mb-aside a.mb-aside-active::after {
+          content: '';
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          background: white;
+          right: -7px;
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+        aside .mb-aside a.mb-aside-active i, aside .mb-aside a.mb-aside-active p {
+          color: white; }
+      aside .mb-aside a i {
+        font-size: 30px;
+        margin-bottom: 10px; }
+      aside .mb-aside a p {
+        font-size: 13px;
+        letter-spacing: 0.7px; }
+
+main {
+  width: 100%;
+  padding-left: 200px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  height: 100%;
+  background: #f3f3f3; }
+  main section.mb-section-cards {
+    height: 100%;
+    width: 100%;
+    padding: 50px 40px 0 40px; }
+    main section.mb-section-cards .mb-card {
+      width: 340px;
+      height: 210px;
+      background-color: #161616;
+      box-shadow: 0 200px 100px -100px #535353 inset;
+      transition: box-shadow 0.5s;
+      border-radius: 20px;
+      padding: 20px;
+      margin-right: 40px;
+      cursor: pointer; }
+      main section.mb-section-cards .mb-card .mb-card-amount {
+        font-size: 35px; }
+      main section.mb-section-cards .mb-card .mb-card-currency {
+        margin-left: 15px; }
+      main section.mb-section-cards .mb-card .mb-card-number {
+        font-size: 25px;
+        letter-spacing: 2px; }
+      main section.mb-section-cards .mb-card .mb-card-date {
+        font-size: 20px; }
+      main section.mb-section-cards .mb-card .mb-card-brand i {
+        font-size: 40px; }
+      main section.mb-section-cards .mb-card:hover {
+        background-color: #0f0c29;
+        box-shadow: 0 200px 100px -100px #5151b3 inset; }
+        main section.mb-section-cards .mb-card:hover .mb-card-number, main section.mb-section-cards .mb-card:hover .mb-card-date, main section.mb-section-cards .mb-card:hover .mb-card-brand {
+          color: white; }
+          main section.mb-section-cards .mb-card:hover .mb-card-number i, main section.mb-section-cards .mb-card:hover .mb-card-date i, main section.mb-section-cards .mb-card:hover .mb-card-brand i {
+            color: white; }
+
+.mb-section-dashboard-content {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .mb-section-dashboard-content .mb-section-dashboard-content-right, .mb-section-dashboard-content .mb-section-dashboard-content-left {
+    width: 48%; }
+  .mb-section-dashboard-content .mb-section-dashboard-item {
+    width: 100%;
+    background: white;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 20px; }
+    .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-header {
+      border-bottom: 1px solid #e4e4e4;
+      padding-bottom: 15px;
+      margin-bottom: 15px; }
+      .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-header select {
+        border: none;
+        margin-left: 15px; }
+    .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-day {
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      margin-bottom: 20px; }
+    .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-day-transaction {
+      margin-bottom: 25px; }
+    .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-icon {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 15px; }
+      .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-icon i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #4b4b4b; }
+      .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-icon.mb-section-dashboard-item-icon-food {
+        background: #a8ff78;
+        /* fallback for old browsers */
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #78ffd6, #a8ff78);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-icon.mb-section-dashboard-item-icon-grocery {
+        background: #D3CCE3;
+        /* fallback for old browsers */
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-icon.mb-section-dashboard-item-icon-clothes {
+        background: #7F7FD5;
+        /* fallback for old browsers */
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-ref .mb-section-dashboard-item-ref-card {
+      font-size: 14px; }
+    .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-amount {
+      font-size: 25px; }
+      .mb-section-dashboard-content .mb-section-dashboard-item .mb-section-dashboard-item-history .mb-section-dashboard-item-amount span {
+        font-size: 18px;
+        margin-left: 5px; }
 
 @font-face {
-  font-family: 'Font-Name';
-  src: url("../fonts/font-name.eot");
-  src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'nexa-bold';
+  src: url("../fonts/NexaBold.otf"); }
 
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
+@font-face {
+  font-family: 'nexa-light';
+  src: url("../fonts/NexaLight.otf"); }
 
 ::selection {
   background: #333;

@@ -1,10 +1,59 @@
-.nav {
-  ul {
-    list-style: none;
-    li {
-      a {
-
+// MONOBANK NAV
+nav {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  z-index: 2;
+  .mb-nav-logo-separator{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mb-nav-currency{
+    font-size: 11px;
+    .mb-nav-currency-amount{
+      margin-left: 10px;
+    }
+    .mb-nav-currency-separator{
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    i{
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+  .mb-nav-option{
+    a{
+      height: 30px;
+      padding: 0 15px;
+      line-height: 30px;
+      font-size: 11px;
+      display: inline-block;
+      letter-spacing: 1.5px;
+      &:first-child{
+        margin-right: 1px;
+        border-top-left-radius : 25px;
+        border-bottom-left-radius: 25px;
       }
+      &:last-child{
+        margin-left: 1px;
+        border-top-right-radius : 25px;
+        border-bottom-right-radius: 25px;
+      }
+    }
+  }
+  .mb-nav-avatar{
+    align-items: center;
+    .mb-nav-avatar-p{
+      margin-right: 20px;
+    }
+    .mb-nav-avatar-img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
   }
 }

@@ -1,18 +1,120 @@
+// COLORS
+$primary : #2c2c2c;
+$secondary: #363636;
+$back: #f3f3f3;
+$separator: #e4e4e4;
+// COLORS Fonts
+$primaryText : #aaaaaa;
+$secondaryText : #919191;
+$blackText: #2c2c2c;
+$green: #78d46f;
+$red: #e77173;
+$white: white;
+// MONOBANK DEFAULT OPTION
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  color: $primaryText;
 }
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, $base 0, $darken 80%, $back 100%);
+
+// BASIC HTML SELECTOR OPTION
+a{
+  text-decoration: none;
 }
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in;
+p{
+  padding: 0;
+  margin: 0;
 }
-body,html{
-	min-height: 100vh;
-	overflow: hidden;
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+}
+h2{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+// CREATED CLASS
+
+/// CREATED CLASS - Fonts
+.mb-light{
+  font-family: 'nexa-light';
+}
+.mb-bold{
+  font-family: 'nexa-bold';
+}
+.mb-open-sans-300{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.mb-open-sans-400{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.mb-open-sans-600{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.mb-open-sans-700{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+/// CREATED CLASS - Flexbox
+.mb-df{
+  display: flex;
+}
+.mb-fd-c{
+  flex-direction: column;
+}
+.mb-jc-c{
+  justify-content: center;
+}
+.mb-jc-sa{
+  justify-content: space-around;
+}
+.mb-jc-sb{
+  justify-content: space-between;
+}
+.mb-ai-c{
+  align-items: center;
+}
+.mb-ai-fe{
+  align-items: flex-end;
+}
+.mb-uppercase{
+  text-transform: uppercase;
+}
+
+/// CREATED CLASS - Colors
+//// CREATED CLASS - Colors - Background
+.mb-primary{
+  background: $primary;
+}
+.mb-secondary{
+  background: $secondary;
+}
+//// CREATED CLASS - Colors - Font
+.mb-red{
+  color: $red;
+}
+.mb-green{
+  color: $green;
+}
+.mb-white{
+  color: $white;
+}
+.mb-primary-text{
+  color: $primaryText;
+}
+.mb-secondary-text{
+  color: $secondaryText;
+}
+.mb-black-text{
+  color: $blackText;
 }

@@ -1,3 +1,52 @@
-.main {
-
+main {
+  width: 100%;
+  padding-left: 200px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  height: 100%;
+  background: $back;
+  section.mb-section-cards{
+    height: 100%;
+    width: 100%;
+    padding: 50px 40px 0 40px;
+    .mb-card{
+      width: 340px;
+      height: 210px;
+      background-color: rgb(22, 22, 22);
+      box-shadow: 0 200px 100px -100px rgb(83, 83, 83) inset; 
+      transition: box-shadow 0.5s;
+      border-radius: 20px;
+      padding: 20px;
+      margin-right: 40px;
+      cursor: pointer;
+      .mb-card-amount{
+        font-size: 35px;
+      }
+      .mb-card-currency{
+        margin-left: 15px;
+      }
+      .mb-card-number{
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+      .mb-card-date{
+        font-size: 20px;
+      }
+      .mb-card-brand{
+        i{
+          font-size: 40px;
+        }
+      }
+      &:hover{
+        background-color: #0f0c29;
+        box-shadow: 0 200px 100px -100px #5151b3 inset;
+        .mb-card-number, .mb-card-date, .mb-card-brand{
+          color: $white;   
+          i{
+            color: $white;   
+          }  
+        }
+      }
+    }
+  }
 }
